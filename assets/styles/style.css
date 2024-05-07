@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Oswald:wght@400;700&family=Quicksand:wght@400;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ 
+}
+
+header nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: #242F9B;
+    justify-content: space-evenly;
+}
+
+header nav ul ::after { 
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .5s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.logo {
+    width: 100%;
+    padding-left: 40px;
+}
+
+ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    margin-right: 0;
+    list-style: none;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jumbotron {
+    text-align: center;
+    color: white;
+    position: relative;
+    background-image: url(maimun.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 780px;
+    width: 100%;  
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+    text-shadow: 2px 1px #000000;
+ 
+}
+
+.jumbotron h3 {
+    font-size: 22px;
+    text-shadow: 2px 1px #000000;
+}
+
+.jumbotron a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: .6s;
+}
+
+.jumbotron a:hover {
+    background: white;
+    color: black;
+}
+
+nav {
+    top: 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    nav { 
+        width: 100%;
+        padding: 0;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+.image {
+    object-position: center;
+    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    transition: .6s;  
+}
+
+.image:hover {
+    transform: scale(0.99);
+    opacity: 92%;
+    box-shadow: 0 0 15px 3px #ffffff;
+}
+
+.kotak {
+    box-shadow: 0 7px 7px 0 #00000033;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 30px;
+    
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+nav li { 
+    display: inline;
+    list-style-type: none;
+}
+
+body {
+    background: linear-gradient(to left, #f0f6f9, #e4f1fa);
+    text-align:justify;
+}
+
+h2, h4 {
+    color: #05257d;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.profile img {
+    width: 120px;
+    border-radius: 15px 50px 30px;
+    padding-top: 10px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+table {
+    padding-top: 10px;
+}
+
+table th {
+    color: #05257d;
+    text-align: left;
+    padding-left: 10px;
+}
+
+table td {
+    padding-left: 20px;
+}
+
+footer {
+    font-weight: bold;
+    padding: 20px;
+    background-color: #242F9B;
+    color: white;
+    text-align: center;
+}
+
+aside {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e40d8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #323da0;
+}
+
+.button {
+    background-color: #3e40d8;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    transition: .5s;
+  }
+
+  .button:hover{
+    background:#1619cc;
+    transform: scale(.98);
+    
+  }
